@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="title">
+        <img src="./images/favicon.png" alt="tic-tac-toe_logo">
+        <h1 font-size="40px">Tic Tac Toe Universe</h1>
+        <h4>Expand Your Horizons with Every Move</h4>
+    </div>
+
+    <div class="main">
+
+        <div class="name">
+            <div>
+                <label for="player1Name">Player 1: </label>
+                <input type="text" id="player1Name" value="Player 1">
+            </div>
+            <div>
+                <label for="player2Name">Player 2: </label>
+                <input type="text" id="player2Name" value="Player 2">
+            </div>    
+        </div>
+
+        <div>
+            <label for="boardSize">Board Size: </label>
+            <select id="boardSize">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+                <option value="6">6x6</option>
+                <option value="7">7x7</option>
+                <option value="8">8x8</option>
+                <option value="9">9x9</option>
+                <option value="10">10x10</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="gameMode">Game Mode: </label>
+            <select id="gameMode">
+                <option value="twoPlayer">Two Player</option>
+                <option value="solo">Solo</option>
+            </select>
+        </div>
+
+        
+        <div class="board" id="board"></div>
+        <div id="turnIndicator" class="turn-indicator">Current Turn: Player 1 (X)</div>
+    
+    
+        <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <p id="player1Score">Player 1: 0</p>
+            <p id="player2Score">Player 2: 0</p>
+            <button id="resetScores">Reset Scores</button>
+            <button id="resetGame">Reset Game</button>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Reset Game</h2>
+            <p>Are you sure you want to reset the current game? This action cannot be undone.</p>
+            <button id="confirmReset">Reset</button>
+            <button id="cancelReset">Cancel</button>
+        </div>
+    </div>
+
+
+
+    
+
+</body>
+</html>
